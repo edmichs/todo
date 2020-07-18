@@ -1,21 +1,39 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import {Scene, Router} from 'react-native-router-flux';
+import LoginScreen from './src/Screens/Login';
+import SignupScreen from './src/Screens/Signup';
+import MainScreen from './src/Screens/Main';
+import EditScreen from './src/Screens/Edit';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Router>
+      <Scene key='root'>
+        <Scene key='loginScreen'
+          animation='fade'
+          component={LoginScreen}
+          panHandlers={null}
+          hideNavBar={true} initial />
+        <Scene key='signupScreen'
+          animation='fade'
+          component={SignupScreen}
+          panHandlers={null}
+          hideNavBar={true} />
+        <Scene key='mainScreen'
+          animation='fade'
+          component={MainScreen}
+          panHandlers={null}
+          hideNavBar={true} />
+        <Scene key='editScreen'
+          animation='fade'
+          hideNavBar={true}
+          panHandlers={null}
+          component={EditScreen} />
+      </Scene>
+    </Router>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+

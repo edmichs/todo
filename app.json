@@ -16,11 +16,17 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
+   
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "ios": {
+      "bundleIdentifier": "com.edmichs.todo",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.edmichs.todo",
+      "versionCode": 1
     }
   }
 }

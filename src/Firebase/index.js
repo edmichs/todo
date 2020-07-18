@@ -1,0 +1,15 @@
+import * as firebase from 'firebase';
+
+firebase.initializeApp({
+  apiKey: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDrp649DiiZsxZc\nq01kMC9mScqWO1FQVqEwnwfJ4PNpdam59PWATr2i2nOSNOEMPnUf/NR5fusKvhU4\n98GOHKSl77brhc6CCXbhDt3Fk9O9vvMWwSawhWovCtF+Lx9ihBkhVteJuSzCqTm3\nOAjPxEcaAn1O4DDSZuH5/7eFCf6ZOa+BHsiTxOQ0Fwc0SQNPDuMU3GP0eyEmAxDB\n7EhfKc3os+tV8kU9mEgE/TqnT8HAtctn20xRvOABMxXcU4nE3xrP8Ij6hgXHT0Uh\nno/2Mj3xnO8wmN27W0k3nDLheEoYhY8t2yyhODBKzYZnCWbu8GViveHxJx3wmCMU\nrvj8kwohAgMBAAECggEAHBXIxKbLdK708TAqyfAatBGDExbIdP9QGGH5rQgR5n2T\nD/IncKZhwDcSC0ihUiLe9WQd5Al55Ha9Q4P2ldPo1Qxt0+HHd/S+DepGSMn6lCx9\n3vY/4M2Ttz3ONCBUWJrG/nPRvgybTqtZsTH8zds2AJ3vln8OXoMLt05wTisf5F2S\ntLEIBDW54sritcAdYmnrcV/tsjLctQN1jo1aSHqSHSHajssCZTTMs9zqfa8ar1IX\nbH4iGlNaA4XWWkOIl2ItGIRt/pdAuhAbS/6w72XY0MmDVB/dpniWeqSQ0/WU4l35\nkMgVSp9GrvygUwXAXRqrrFw6qIoLgPGNmRrO8y+WOQKBgQD6BuFIFFt9uNr6nZ7s\nU3KTsVt2hRErwiDdZbHv4Nhp/UjpGefITfPi35yreI0PcaYxoZSeFo2b6b9q9jVV\ncHWk3tADnk8jP1nSoppWX0J7QQREUv2v1g+o1YEpGWWrb4TwT3YFaSsE7TwfwSKB\n7bG8XQSRPT/+UCZxFQCUNKVVWQKBgQDxSOegX12IRc8nxpeytlyR4ZrTh6hutLc5\nnbFGMp5gtpSMzU9CBtZFSm0pjcAEbVhQak8qmb6Xh+HMbvkm5gB0qVGBC6B3TXzt\nQkmNY/X6EYY5HuXDmLs76uoqj4iB5JCce+xhQyse4KHyWa3eRzt/GM+S09P7JLrR\nIGYRXdgaCQKBgAsOVtPrIoiSrgw7ABYPMpfZVeQNyk6XDQD9SDsFREybiKfWH2u6\nFrjHjpP+hq5SJjk3nezHrodgdLh0HrOif3FE8QnX7EPwvzYTPqPnHnd4zol+6fzm\niFa86jM5DkfgbI571Qo0NlTHcMsurSn1qtBbhKIvhS7nuGtztEzZbx4xAoGABYmG\nx0do/hecCW2lTZShyzdCNliGpQPAsLHNv66ps8582j5b80f04uIyXyHBplhcDnxi\nFLgyh4e2xtpFHX9pw0OfezapGBPPKiK7TWNd4b9FNUpgO3zlzxo1BYUFvPVh3DV7\n1z+TXcIJ9WXZd6Bq3R/Uo6n402qkXug/b2aX7wECgYEAgcfc3pUQ7PnLsyXwqfdw\nRuqhJqlaImVlhMEspea+Pn8olT9m8DZt4PQaVdKLowi7tqJdHOLluQ4Nj+fO7J+h\nJGBfms2m3fTRXPSjF7EYdU3m8GvsQOqzDOLx60yOiYFvKAutbVcT7DaQszU+rTxE\n0qV5MClLfnUCuUVRjYyZs3Q=\n-----END PRIVATE KEY-----\n",
+  authDomain: "https://accounts.google.com/o/oauth2/auth",
+  databaseURL: "https://monimoo-29336.firebaseio.com/",
+  storageBucket: "FILL_THIS_WITH_YOURS",
+  messagingSenderId: "FILL_THIS_WITH_YOURS"
+});
+
+export const firebaseRef = firebase.database().ref();
+export default firebase;
+
+         
+  
