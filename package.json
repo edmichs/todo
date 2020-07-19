@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "~1.11.0",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/drawer": "^5.8.5",
     "@react-navigation/native": "^5.7.0",
@@ -15,6 +16,7 @@
     "expo": "~38.0.8",
     "expo-font": "~8.2.1",
     "expo-status-bar": "^1.0.2",
+    "firebase": "3.6.5",
     "native-base": "^2.13.12",
     "prop-types": "^15.7.2",
     "react": "~16.11.0",
@@ -31,8 +33,7 @@
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
-    "redux-thunk": "^2.3.0",
-    "firebase": "3.6.5"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",

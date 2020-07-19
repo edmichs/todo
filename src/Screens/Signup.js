@@ -12,7 +12,7 @@ class SignupScreen extends Component {
       return <Main />;
     }
 
-    return <Signup store={store}/>;
+    return <Signup />;
   }
 }
 

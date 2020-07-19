@@ -20,9 +20,7 @@ class LoginScreen extends Component {
       return <Main />;
     }
 
-    return  (<Provider store={store}>
-
-                 <Login store={store} /></Provider>);
+    return  <Login />;
   }
 }
 
@@ -37,4 +35,5 @@ function mapStateToProps(state) {
 }
 
 
-export default connect(mapStateToProps)(LoginScreen);
+
+export default connect(mapStateToProps, todoActions)(LoginScreen);

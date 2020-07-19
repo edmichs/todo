@@ -5,7 +5,7 @@ import {bindActionCreators} from 'redux';
 import * as todoActions from '../../actions/todoActions';
 import {
 	StyleSheet,
-	Image,
+	ImageBackground,
 	View,
 	Platform
 } from 'react-native';
@@ -46,11 +46,11 @@ class Container extends Component {
 
 		if (this.props.wallpaper) {
 			return (
-				<Image style={[this.props.style, styles.picture]}
+				<ImageBackground style={[this.props.style, styles.picture]}
 						source={this.props.source}
 				>
 					{renderChildren}
-				</Image>
+				</ImageBackground>
 			);
 		}
 
